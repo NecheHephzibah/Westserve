@@ -1,0 +1,152 @@
+@font-face {
+    font-family: GothamLequireFonts;
+    src: url(c:\Users\Hephzibah\Desktop\Gotham-Font);
+}
+
+@font-face {
+    font-family: MonteserratRalewayFonts;
+    src: url(c:\Users\Hephzibah\Downloads\static);
+}
+
+@font-face {
+    font-family: Lequire;
+    src: url(c:\Users\Hephzibah\Desktop\LequireFonts);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav bar Styling */
+
+.menu{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    padding: 23px 15px;
+    color: white;
+}
+
+
+.menu-container{
+    font-size: 12px;
+    font-family: Gotham;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 15px;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+.menu-list li a{
+    text-decoration: none;
+    display: block;
+    padding-bottom: 8px;
+    color: white;
+}
+
+.menu-list li a:hover{
+    color: goldenrod;
+}
+
+/* Style the nav sub-menus */
+.sub-menu{
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 25px 0 5px;
+    border-bottom-left-radius: 10px;
+    transition: all 200ms linear;
+}
+
+.submenu > a > i {
+    margin-left: 2px;
+    color: whitesmoke;
+}
+
+
+.submenu:hover .sub-menu{
+    display: block;
+    transition: all 10s linear;
+}
+
+.sub-menu li{
+    display: block;
+}
+
+.sub-menu li a{
+    color: goldenrod;
+}
+
+.sub-menu li:hover{
+    background-color: black;
+    padding: 7px 7px 0 7px;
+    border-bottom-right-radius: 10px;
+    font-size: 12px;
+}
+
+.sub-menu li:hover a:hover{
+    color: whitesmoke;
+}
+
+
+/* Style the logo */
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    padding-right: 25px;
+    font-family: Gotham;
+    text-transform: uppercase;
+}
+
+/* Style background Image */
+.wallpaper{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/interior-4324490.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+
+.wallpaper::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* text overlay style */
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+
+.text-overlay p{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
