@@ -1,10 +1,10 @@
 @font-face {
-    font-family: GothamLequireFonts;
+    font-family: Gotham Lequire Fonts;
     src: url(c:\Users\Hephzibah\Desktop\Gotham-Font);
 }
 
 @font-face {
-    font-family: MonteserratRalewayFonts;
+    font-family: Monteserrat Raleway Fonts;
     src: url(c:\Users\Hephzibah\Downloads\static);
 }
 
@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Monteserrat';
+}
+
 /* Nav bar Styling */
 
 .menu{
@@ -26,8 +30,8 @@
     position: fixed;
     z-index: 1000;
     display: flex;
-    padding: 23px 15px;
-    color: white;
+    padding: 35px 15px;
+    color: black;
 }
 
 
@@ -53,33 +57,34 @@
     text-decoration: none;
     display: block;
     padding-bottom: 8px;
-    color: white;
+    color: black;
 }
 
 .menu-list li a:hover{
-    color: goldenrod;
+    color: #207388;
 }
 
 /* Style the nav sub-menus */
 .sub-menu{
     display: none;
-    position: absolute;
+    position: relative;
     font-size: 12px;
     line-height: 20px;
-    padding: 0 25px 0 5px;
+    /* padding: 0 px 0 5px; */
     border-bottom-left-radius: 10px;
     transition: all 200ms linear;
 }
 
 .submenu > a > i {
+    position: absolute;
     margin-left: 2px;
-    color: whitesmoke;
+    color: black;
 }
 
 
 .submenu:hover .sub-menu{
     display: block;
-    transition: all 10s linear;
+    transition: all .5s linear;
 }
 
 .sub-menu li{
@@ -87,40 +92,94 @@
 }
 
 .sub-menu li a{
-    color: goldenrod;
+    color: #207388;
 }
 
 .sub-menu li:hover{
-    background-color: black;
-    padding: 7px 7px 0 7px;
-    border-bottom-right-radius: 10px;
+    /* background-color: black; */
+    padding: 2px 2px 0 2px;
+    /* border-bottom-right-radius: 10px; */
     font-size: 12px;
+    border: 1px solid #207388;
 }
 
 .sub-menu li:hover a:hover{
-    color: whitesmoke;
+    color: #207388;
 }
 
 
 /* Style the logo */
 .logo{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 800;
     padding-right: 25px;
     font-family: Gotham;
+    color: #011d24;
     text-transform: uppercase;
 }
 
 /* Style background Image */
-.wallpaper{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/interior-4324490.jpg');
+
+.wall-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 90px;
+}
+
+.wallpaper-side{
+    width: 40%;
+    height: 86vh;
+    background-color: #011d24;
+}
+
+.text-overlay{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Gotham';
+    font-size: 45px;
+    padding: 160px 120px 0 130px;
+}
+
+#last-words{
+    position: relative;
+    bottom: 0;
+    color: white;
+    padding: 530px 100px 0 100px;
+    font-family: 'Gotham';
+    font-size: 13px;
+}
+
+.Westeros-logo{
+    position: relative;
+    color: white;
+    font-size: 10px;
+    padding: 1px 20px 90px 30px;
+}
+
+.wallpaper-image{
+    width: 60%;
+    height: 86vh;
+    background-image: url(./images/room-4323127_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* .wallpaper{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/room-4323127_1920.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
     height: 100vh;
-}
+} */
 
-.wallpaper::before{
+
+
+/* .wallpaper::before{
     content: '';
     display: block;
     position: absolute;
@@ -131,10 +190,10 @@
     background-color: black;
     opacity: 0.6;
     z-index: -1;
-}
+} */
 
 /* text overlay style */
-.text-overlay{
+/* .text-overlay{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -142,11 +201,74 @@
     text-align: center;
     color: white;
     z-index: 1;
-}
+} */
 
-
-.text-overlay p{
+/* .text-overlay p{
     font-size: 36px;
     margin-bottom: 10px;
+} */
+
+/* STYLING HOME CONTENTS: BLOG SNIPPETS AND IMAGES (HTML)*/
+h3{
+    color: #011d24;
 }
 
+#blog-heading{
+    color: #011d24;
+}
+
+.blog-rule-line{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Gotham';
+    color: #207388;
+}
+
+.blog-container {
+    padding: 70px 0px 0px 115px ;
+}
+
+
+.blogit {
+    display: flex;
+    flex-direction: row;
+    column-gap: 70px;
+    position: relative;
+}
+
+.blog-write-up {
+    width: 50%;
+    font-family: 'Gotham';
+    /* background-color: rgb(201, 198, 198); */
+    margin-bottom: 20px;
+    padding: 50px 70px;
+    border-radius: 15px;
+}
+
+.blog-image {
+    width: 35%;
+    /* background-color: rgb(201, 198, 198); */
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.blog-text {
+    line-height: 35px;
+    font-family: 'Gotham';
+    font-size: 15px;
+}
+
+.blog-image {
+    background-position: center;
+    background-size: cover;
+}
+
+.anchor-read {
+    text-decoration: none;
+    color: rgb(9, 98, 133);
+    font-size: 11px;
+}
+
+.anchor-read:hover {
+    color: rgb(204, 15, 15);
+}
