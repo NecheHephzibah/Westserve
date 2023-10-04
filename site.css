@@ -1,16 +1,16 @@
 @font-face {
-    font-family: Gotham Lequire Fonts;
-    src: url(c:\Users\Hephzibah\Desktop\Gotham-Font);
+    font-family: 'Nato_sans_Display';
+    src: url(C:\Users\HP\Downloads\Noto_Sans_Display);
 }
 
 @font-face {
-    font-family: Monteserrat Raleway Fonts;
-    src: url(c:\Users\Hephzibah\Downloads\static);
+    font-family: 'Montserrat';
+    src: url(C:\Users\HP\Downloads\Montserrat);
 }
 
 @font-face {
-    font-family: Lequire;
-    src: url(c:\Users\Hephzibah\Desktop\LequireFonts);
+    font-family: 'Lobster';
+    src: url(C:\Users\HP\Downloads\Lobster);
 }
 
 *{
@@ -20,27 +20,28 @@
 }
 
 body{
-    font-family: 'Monteserrat';
+    font-family: 'Noto_Sans_Display', sans-serif;
 }
 
 /* Nav bar Styling */
 
 .menu{
     width: 100%;
-    position: fixed;
+    position: sticky;
     z-index: 1000;
     display: flex;
-    padding: 35px 15px;
+    padding: 35px 15px 0 15px;
     color: black;
 }
 
 
 .menu-container{
+    width: 50%;
     font-size: 12px;
-    font-family: Gotham;
+    font-family: '';
     text-transform: uppercase;
     font-weight: 400;
-    padding: 10px 15px;
+    padding: 10px 15px 0 15px;
 }
 
 .menu-list{
@@ -56,7 +57,7 @@ body{
 .menu-list li a{
     text-decoration: none;
     display: block;
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
     color: black;
 }
 
@@ -69,22 +70,22 @@ body{
     display: none;
     position: relative;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 23px;
+    max-height: 10px;
     /* padding: 0 px 0 5px; */
     border-bottom-left-radius: 10px;
-    transition: all 200ms linear;
+    transition: all 0.3s ease, all 0.3s ease;
 }
 
 .submenu > a > i {
     position: absolute;
     margin-left: 2px;
-    color: black;
+    color: #011d24;
 }
 
 
 .submenu:hover .sub-menu{
     display: block;
-    transition: all .5s linear;
 }
 
 .sub-menu li{
@@ -107,13 +108,29 @@ body{
     color: #207388;
 }
 
+.social-media {
+    width: 30%;
+    padding: 0 10px 0 70px;
+    color: #207388;
+}
+
+.fa-brands {
+    padding: 0 10px;
+}
+
+.fa-brands:hover{
+    color: rgb(209, 192, 36);
+}
+
+
 
 /* Style the logo */
 .logo{
+    width: 20%;
     font-size: 30px;
     font-weight: 800;
     padding-right: 25px;
-    font-family: Gotham;
+    font-family: 'Noto_Sans_Display', sans-serif;
     color: #011d24;
     text-transform: uppercase;
 }
@@ -125,7 +142,7 @@ body{
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: 90px;
+    margin-top: 25px;
 }
 
 .wallpaper-side{
@@ -138,17 +155,17 @@ body{
     position: absolute;
     color: white;
     text-align: center;
-    font-family: 'Gotham';
+    font-family: '';
     font-size: 45px;
-    padding: 160px 120px 0 130px;
+    padding: 160px 90px 0 160px;
 }
 
 #last-words{
     position: relative;
     bottom: 0;
     color: white;
-    padding: 530px 100px 0 100px;
-    font-family: 'Gotham';
+    padding: 470px 90px 0 135px;
+    font-family: 'Noto_Sans_Display', sans-serif;
     font-size: 13px;
 }
 
@@ -220,28 +237,34 @@ h3{
 .blog-rule-line{
     margin-top: 100px;
     text-align: center;
-    font-family: 'Gotham';
+    font-family: 'Noto_Sans_Display', sans-serif;
     color: #207388;
 }
 
 .blog-container {
-    padding: 70px 0px 0px 115px ;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0px 30px 160px ;
 }
 
 
 .blogit {
     display: flex;
     flex-direction: row;
-    column-gap: 70px;
+    column-gap: 5px;
     position: relative;
+}
+
+.blogit-b {
+    column-gap: 50px;
 }
 
 .blog-write-up {
     width: 50%;
-    font-family: 'Gotham';
+    font-family: 'Noto_Sans_Display', sans-serif;
     /* background-color: rgb(201, 198, 198); */
     margin-bottom: 20px;
-    padding: 50px 70px;
+    padding: 50px 7px;
     border-radius: 15px;
 }
 
@@ -254,11 +277,12 @@ h3{
 
 .blog-text {
     line-height: 35px;
-    font-family: 'Gotham';
+    font-family: 'Noto_Sans_Display', sans-serif;
     font-size: 15px;
 }
 
 .blog-image {
+    /* padding-right: 30px; */
     background-position: center;
     background-size: cover;
 }
@@ -270,5 +294,123 @@ h3{
 }
 
 .anchor-read:hover {
-    color: rgb(204, 15, 15);
+    color: rgb(146, 84, 14);
+}
+
+/* ===========FOOTER STYLING=========== */
+
+.footer-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/cartography-3244166_1280.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-container::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(7, 5, 22);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 10px; */
+}
+
+.footer-menu-link {
+    width: 33.3%;
+    padding: 125px 0px 20px 150px;
+    line-height: 45px;
+}
+
+#footer-first-para{
+    font-weight: 900;
+    font-size: 30px;
+    color: #207388;
+    text-transform: uppercase;
+    padding: 125px 0px 20px 40px;
+}
+
+#footer-second-para {
+    line-height: 35px;
+    padding: 0px 0px 30px 40px;
+}
+
+.footer-menu {
+    width: 33.3%;
+}
+
+.footer-menu-link ul {
+    list-style-type: none;
+}
+
+.footer-menu-link li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu-link li a:hover {
+    color: #207388;
+}
+
+.footer-about-list-item {
+    font-weight: 800;
+}
+
+.footer-about-list-item:hover {
+    color: white;
+}
+
+.footer-contact{
+    width: 33.3%;
+    padding: 125px 10px 20px 50px;
+    line-height: 45px;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+}
+
+.footer-contact li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact .footer a:hover {
+    color: #207388;
+}
+
+.social-media-handle {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    left: 0;
+    font-size: 25px;
+}
+
+.social-media-handle a i{
+    color: #207388;
+    transition: all 0.3s ease, all 0.3s ease;
+}
+
+.social-media-handle a i:hover {
+    color: rgb(146, 84, 14);
+}
+
+.footer-copyright {
+    padding: 50px 0 0 40px;
+    font-size: 11px;
+    color: #207388;
 }
