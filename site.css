@@ -1,17 +1,7 @@
-@font-face {
-    font-family: 'Nato_sans_Display';
-    src: url(C:\Users\HP\Downloads\Noto_Sans_Display);
-}
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url(C:\Users\HP\Downloads\Montserrat);
-}
 
-@font-face {
-    font-family: 'Lobster';
-    src: url(C:\Users\HP\Downloads\Lobster);
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;600;700;800&family=Noto+Sans:wght@100;200;300;400;600;700;800&display=swap');
+
 
 *{
     margin: 0;
@@ -20,7 +10,7 @@
 }
 
 body{
-    font-family: 'Noto_Sans_Display', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 /* Nav bar Styling */
@@ -40,7 +30,7 @@ body{
 .menu-container{
     width: 50%;
     font-size: 12px;
-    font-family: '';
+    font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     padding: 10px 15px 0 15px;
@@ -132,7 +122,7 @@ body{
     font-size: 30px;
     font-weight: 800;
     padding-right: 25px;
-    font-family: 'Noto_Sans_Display', sans-serif;
+    font-family: sans-serif;
     color: #011d24;
     text-transform: uppercase;
 }
@@ -153,21 +143,27 @@ body{
     background-color: #011d24;
 }
 
-.text-overlay{
+.overlay{
     position: absolute;
     color: white;
     text-align: center;
-    font-family: '';
+    font-family: 'Noto Sans', sans-serif;
+    /* font-size: 45px; */
+    padding: 160px 90px 0px 160px;
+}
+
+.wall-text{
+    position: relative;
+    padding: 1px 0px 0px px;
     font-size: 45px;
-    padding: 160px 90px 0 160px;
 }
 
 #last-words{
     position: relative;
     bottom: 0;
     color: white;
-    padding: 470px 90px 0 135px;
-    font-family: 'Noto_Sans_Display', sans-serif;
+    padding: 550px 90px 0 135px;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 13px;
 }
 
@@ -175,7 +171,7 @@ body{
     position: relative;
     color: white;
     font-size: 10px;
-    padding: 1px 20px 90px 30px;
+    padding: 1px 70px 90px 65px;
 }
 
 .wallpaper-image{
@@ -239,7 +235,7 @@ h3{
 .blog-rule-line{
     margin-top: 100px;
     text-align: center;
-    font-family: 'Noto_Sans_Display', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #207388;
 }
 
@@ -263,7 +259,7 @@ h3{
 
 .blog-write-up {
     width: 50%;
-    font-family: 'Noto_Sans_Display', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     /* background-color: rgb(201, 198, 198); */
     margin-bottom: 20px;
     padding: 50px 7px;
@@ -279,7 +275,7 @@ h3{
 
 .blog-text {
     line-height: 35px;
-    font-family: 'Noto_Sans_Display', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
 
@@ -309,7 +305,7 @@ h3{
     width: 100%;
     height: 70vh;
     color: rgb(255, 255, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .footer-container::before{
@@ -413,8 +409,11 @@ h3{
 
 .footer-copyright {
     padding: 50px 0 0 40px;
-    font-size: 11px;
     color: #207388;
+}
+
+#footer-copyright-para{
+    font-size: 11px;
 }
 
 
@@ -427,6 +426,7 @@ h3{
     position: relative;
     margin-top: 25px;
     padding-bottom: 80px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about-wallpaper {
@@ -461,7 +461,180 @@ h3{
 }
 
 #about-west{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 100;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif; 
 }
+
+
+/* ================ ABOUT STORY STORY CONTENT=================== */
+
+.story-container {
+    height: 70vh;
+    padding: 20px 170px 100px 170px;
+    line-height: 50px;
+    justify-content: center;
+    
+}
+
+.story{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.story-content{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-overlay{
+    color: white;
+    padding-top: 70px;
+}
+
+.about-expertise-container{
+    width: 100%;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/Smart-Home-Automation.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ======================= CONTACT PAGE STYLING STARTS HERE ======================== */
+/* Container for the form */
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    background-color: #011d24;
+
+}
+
+.contact-info{
+    width: 50%;
+    padding: 0px 150px 0 50px;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+.contact-us{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#contact-para{
+    padding: 15px 0;
+    font-size: larger;
+}
+
+.contact-detail{
+    width: 30%;
+    /* box-shadow: 0 0 10px rgba(240, 243, 33, 0.1); */
+    border-radius: 5px;
+    background-color: white;
+}
+/* .container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* width: 80%;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+  }
+
+  .contact-info{
+    width: 40%; */
+
+    /* flex: 1; */
+    /* padding-right: 200px; */
+    /* color: black;
+  }
+
+  .contact-detail{
+    width: 40%;
+  } */
+  
+  /* Form styles */
+
+  .contact-detail{
+    padding: 65px;
+  }
+
+  .contact-form {
+    flex: 2;
+    display: grid;
+    grid-gap:20px;
+  }
+  
+  .form-group {
+    display: grid;
+  }
+  
+  label {
+    font-family: 'Noto_Sans_Display', sans-serif;
+    font-weight: 100;
+    margin-bottom: 15px;
+    color: rgb(99, 94, 94);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(243, 228, 231);
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #207388;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #11b3db;
+  }
+  
+  /* Center the form  */
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Heading styles */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px; 
+  } 
