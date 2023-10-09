@@ -661,23 +661,35 @@ h3{
 
   /* =================================== CASE STUDY PAGE STYLING  ================================= */
   .case-container{
-    margin: 150px 10px 100px 70px;
+    margin: 80px 20px 100px 20px;
+  }
+
+  .horizontal-line{
+    color: #ddd;
+    margin-top: 109px;
   }
 
   #case-heading{
     padding: 0 0 50px 0;
-    font-family: 'Noto Sans';
+    font-family: 'Montserrat';
     font-weight: 200;
     text-align: center;
   }
 
   .inner-case-container{
     position: relative;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 400px;
+    width: 391px;
     height: 435px;
     background-color: #f2f2f2;
     margin: 10px 40px 40px 0px;
   }
+
+  .case-image{
+    background-position: center;
+    background-size: cover;
+  }
+
+  
