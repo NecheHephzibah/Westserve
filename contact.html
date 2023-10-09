@@ -17,17 +17,22 @@
         <nav class="menu-container">
             <ul class="menu-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog </a></li>
                 <li class="submenu">
                     <a href="#">Services <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="sub-menu">
-                        <li><a href="#">Consult</a></li>
-                        <li><a href="#">Case Studies</a></li>                        
-                        <li><a href="#">Products</a></li>                        
+                        <li><a href="consult.html">Consult</a></li>
+                        <li><a href="case-study.html">Case Studies</a></li>                        
+                        <li><a href="product.html">Products</a></li>                        
 
                     </ul>
                 </li>
-                
+                <li class="submenu">
+                    <a href="#">Blog <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">What is IOT</a></li>
+                        <li><a href="#">How is IOT</a></li>
+                    </ul>
+                </li>
                 <li class="submenu">
                     <a href="#">About<i class="fa-solid fa-caret-down"></i></a>
                     <ul class="sub-menu">
@@ -46,6 +51,7 @@
     </header>
 
     <main>
+        <!-- HTML structure for Contact page starts here -->
         <div class="container">
             <div class="contact-info">
                 <p class="story contact-us">Contact Us</p>
@@ -56,26 +62,20 @@
             <div class="contact-detail">
                 <form action="#" method="POST" class="contact-form">
                     <div class="form-group">
-                      <!-- <label for="name">Name</label> -->
                       <input type="text" id="name" name="name" placeholder="Name" required>
                     </div>
                     <div class="form-group">
-                      <!-- <label for="email">Email</label> -->
                       <input type="email" id="email" name="email" placeholder="Email" required="*">
                     </div>
                     <div class="form-group">
-                        <!-- <label for="email">Email</label> -->
                         <input type="email" id="email" name="email" placeholder="Phone" required="*">
                       </div> <div class="form-group">
-                        <!-- <label for="email">Email</label> -->
                         <input type="email" id="email" name="email" placeholder="State" required="*">
                       </div> <div class="form-group">
-                        <!-- <label for="email">Email</label> -->
                         <input type="email" id="email" name="email" placeholder="City" required="*">
                       </div>
                     <div class="form-group">
-                      <!-- <label for="message">Message</label> -->
-                      <textarea id="message" name="message" rows="4" placeholder="Tell us what you're interested in...Dynamic Lighting | Automated Shades | Smart Security | Automated Entertainment... " required></textarea>
+                      <textarea id="message" name="message" rows="4" placeholder="Tell us what you're interested in...Dynamic Lighting | Automated Shades | Smart Security | Smart Entertainment... " required></textarea>
                     </div>
                     <div class="form-group">
                       <button type="submit">Submit</button>

@@ -467,7 +467,7 @@ h3{
 }
 
 
-/* ================ ABOUT STORY STORY CONTENT=================== */
+/* ================ ABOUT STORY CONTENT=================== */
 
 .story-container {
     height: 70vh;
@@ -497,6 +497,7 @@ h3{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/Smart-Home-Automation.png);
     background-size: cover;
     background-position: center;
+    margin-bottom: 80px;
 }
 
 
@@ -539,35 +540,6 @@ h3{
     border-radius: 5px;
     background-color: white;
 }
-/* .container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* width: 80%;
-    margin-top: 150px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 100vh;
-  }
-
-  .contact-info{
-    width: 40%; */
-
-    /* flex: 1; */
-    /* padding-right: 200px; */
-    /* color: black;
-  }
-
-  .contact-detail{
-    width: 40%;
-  } */
-  
-  /* Form styles */
 
   .contact-detail{
     padding: 65px;
@@ -590,9 +562,7 @@ h3{
     color: rgb(99, 94, 94);
   }
   
-  input[type="text"],
-  input[type="email"],
-  textarea {
+  input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid rgb(243, 228, 231);
@@ -638,3 +608,76 @@ h3{
     font-size: 16px;
     margin-bottom: 20px; 
   } 
+
+
+  /* ===================  PRODUCT PAGE STYLING ======================== */
+
+  .product-container{
+    margin: 150px 100px 100px 150px;
+    /* border: 1px solid red; */
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+  .product-inner-container{
+    width: 320px;
+    height: 435px;
+    background-color: #f2f2f2;
+    margin: 10px 40px 40px 0px;
+  }
+
+  .product-image{
+    background-image: url(./images/Savant_CoreLightedMirror_SVTCM00030N03P00.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 170px;
+    height: 180px;
+    margin: 30px 73px 15px 73px;
+
+  }
+
+  .product-priceTag{
+    width: 220px;
+    height: 120px;
+    margin: 50px 50px;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+  }
+
+  #product-name{
+    color: black;
+  }
+
+  .product-payment{
+    text-decoration: none;
+    color: #011d24;
+    font-family: 'montserrat', sans-serif;
+    border: 1px solid #11b3db;
+    padding: 7px 12px;
+  }
+
+
+  /* =================================== CASE STUDY PAGE STYLING  ================================= */
+  .case-container{
+    margin: 150px 10px 100px 70px;
+  }
+
+  #case-heading{
+    padding: 0 0 50px 0;
+    font-family: 'Noto Sans';
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .inner-case-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 435px;
+    background-color: #f2f2f2;
+    margin: 10px 40px 40px 0px;
+  }
