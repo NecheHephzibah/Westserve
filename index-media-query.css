@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;600;700;800&family=Noto+Sans:wght@100;200;300;400;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Media Query for Mobile Screens */
+@media (max-width: 767px) {
+    .menu-container {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #011d24;
+        /* box-shadow: 0 0 20px rgba(15, 15, 13, 0.4); */
+    }
+
+    .menu-list {
+        flex-direction: column;
+    }
+
+    .menu-list li {
+        margin: 15px 0px;
+    }
+
+    .menu-list li a {
+        font-size: 14px;
+        color: whitesmoke;
+    }
+
+
+    /* Style the hamburger menu icon */
+    .menu-toggle i {
+        font-size: 24px;
+        color: #011d24;
+    }
+
+    /* Show the navigation menu when the hamburger icon is clicked */
+    .menu-toggle.active + .menu-container {
+        display: block;
+        background-color: #011d24;
+        box-shadow: 0 0 20px rgba(15, 15, 13, 0.4);
+    }
+
+    /* Style the navigation menu items in the hamburger menu */
+    .menu-toggle.active + .menu-container .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle.active + .menu-container .menu-list li {
+        list-style: none;
+        margin: 10px 0;
+    }
+
+    .menu-toggle.active + .menu-container .menu-list li a {
+        text-decoration: none;
+        color: rgb(233, 193, 193);
+        font-size: 14px;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    /* Position the hamburger icon to the left */
+    .menu-toggle {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+
+        margin: 10px; 
+    }
+    
+    /* Position the logo to the center */
+    .logo {
+        width: 60%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        color: #011d24;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+
+
+    .menu-list li a:hover{
+        color: whitesmoke;
+        text-decoration: underline;
+       
+    }
+
+    /* Style the nav sub-menus */
+    .sub-menu {
+        display: none;
+        position: absolute;
+        top: 70;
+        min-width: 200px; 
+        font-size: 13px;
+        line-height: 30px;
+        padding: 10px ;
+        z-index: 1;
+        background-color: transparent;
+    }
+
+    .submenu:hover .sub-menu{
+        background-color: #011d24;
+        left: 0;
+    }
+
+
+    .sub-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .sub-menu li a {
+    
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 14px;  
+    }
+
+    .menu-list li:hover .sub-menu {
+        display: block;
+    }
+
+    .sectioning{
+        width: 100vh;
+        height: 80vh;
+        background-image: url(./images/person-using-smartphone-his-automated-home.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .wallpaper-side{
+        width: 100%;
+        height: 0vh;
+        background-color: none;
+    }
+
+    .wall-text{
+        display: block;
+        position: relative;
+        text-align: center;
+        line-height: 30px;
+        padding: 0px 40px 0 40px ;
+        color: black;
+    }
+
+    #quote-tag{
+        color: black;
+        text-align: center;
+        padding-top: 200px;
+    }
+
+    .wall-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        position: relative;
+        margin-top: 120px;
+    }
+
+    .overlay{
+        display: block;
+        position: absolute;
+        color: black;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        padding:400px 40px 0 40px ;
+    }
+
+    .blog-rule-line{
+        margin-top: 400px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+    }
+
+    .blog-container {
+        padding: 0px 5px 30px 23px ;
+    }
+
+
+    .blogit {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .blogit-b > img{
+        position: relative;
+        padding-top: 300px;
+    }
+
+    .blogit-b > .blog-write-up{
+        position: absolute;
+        top: 0;
+    }
+
+    .blog-write-up {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+        padding: 50px 7px;
+        border-radius: 15px;
+    }
+
+    .blog-image {
+        width:100%;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    /* === Footer Section ==== */
+
+    .footer-container {
+        
+        
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: rgb(255, 255, 255);
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .footer-container::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(7, 5, 22);
+        opacity: 0.8;
+        z-index: -1;
+    }
+    
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #footer-first-para{
+        padding: 40px 10px 10px 50px;
+    }
+
+    .footer-menu-link {
+        width: 100%;
+        padding: 10px 10px 5px 50px;
+        line-height: 45px;
+    }
+
+    .footer-contact{
+        width: 100%;
+        padding: 40px 10px 20px 50px;
+        line-height: 45px;
+        font-style: normal;
+    }
+
+    .footer-menu {
+        width: 100%;
+        
+    }
+
+    #footer-second-para {
+        line-height: 35px;
+        padding: 0px 10px 20px 50px;
+    }   
+
+    .footer-copyright {
+        padding: 50px 10px 10px 10px;
+        color: #207388;
+    }
+
+    #footer-copyright-para{
+        font-size: 9px;
+        text-transform: capitalize;
+    }
+
+    /* =============== Media Query for About Page =================== */
+
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .about-wallpaper {
+        width: 100%;
+        height: 170vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./images/pexels-mark-2724749.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .about-wallpaper::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        z-index: -1;
+    }
+    
+   
+    .word-overlay{
+        position: absolute;
+        top: 25%;
+        left: 7%;
+        transform: translate(-4%, -14%);
+        text-align: left;
+        color: white;
+        z-index: 1;
+        line-height: 30px;
+        overflow-y: visible;
+    }
+    
+    #about-west{
+        font-size: 30px;
+        font-weight: 100;
+        font-family: sans-serif;
+        text-align: center; 
+        line-height: 2;
+    }
+
+    .story-container {
+        height: 90vh;
+        padding: 80px 10px 900px 10px;
+        line-height: 3;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .story-content{
+        line-height: 3;
+        text-align: left;
+    }
+
+    .content-story{
+        line-height: 3;
+    }
+
+    .story{
+        line-height: 2;
+    }
+
+    .expertise-content{
+        padding-bottom: 1200px;
+    }
+
+
+    /* ========= Media Query For Contact Page ======= */
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        width: 100%;
+        height: 200vh;
+        /* top: 140%; */
+        /* padding-top: 15px; */
+        /* margin-bottom: 100px; */
+        background-color: #011d24;
+    
+    }
+
+    .contact-info{
+        width: 100%;
+        text-align: center;
+        padding: 0px 20px 0 20px;
+        line-height: 45px;
+        font-size: 18px;
+        font-weight: lighter;
+        font-family: 'Noto Sans', sans-serif;
+        color: white;
+    }
+
+    .contact-detail{
+        width: 80%;
+        
+        /* box-shadow: 0 0 10px rgba(240, 243, 33, 0.1); */
+        border-radius: 5px;
+        background-color: white;
+    }
+
+
+    /* ========= Media Query for Product Page ===== */
+
+    .product-container{
+        margin-top: 0px;
+        /* border: 1px solid red; */
+        margin: 50px 87px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        flex-wrap: wrap;
+        
+    }
+
+
+    /* ============ Media Query for Help Page ============= */
+
+    .text-over{
+        padding-top: 70px;
+        line-height: 2;
+        text-align: center;
+        font-weight: 400;
+        font-size: 37px;
+    }
+
+    /*== Help -> Manual Page ==*/
+
+    .manual-container {
+        width: 100%;
+        height: 100%;
+        margin: 100px 0 0;
+        padding: 100px 70px ;
+        background-color: #011d24;
+    }
+
+    .inner-manual{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center; 
+    }
+}
+

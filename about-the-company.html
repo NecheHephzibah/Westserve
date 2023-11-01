@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Westeros</title>
     <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="index-media-query.css">
+    <link rel="stylesheet" href="tablet-media-query.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/e469359435.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 </head>
 <body>
     <!-- first section for the home page -->
-    <header class="menu">
+    <header class="menu mobile-menu">
         <!-- LOGO -->
-        <div class="logo">Westeros</div>
+        <div class="logo"><a href="index.html">WESTESERVE</a></div>
         <!-- NAVIGATION BAR -->
         <nav class="menu-container">
             <ul class="menu-list">
                 <li><a href="index.html">Home</a></li>
-                <li class="submenu">
+                <li class="submenu mobile-submenu-container">
                     <a href="#">Services <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="sub-menu">
                         <li><a href="consult.html">Consult</a></li>
@@ -26,14 +31,8 @@
 
                     </ul>
                 </li>
-                <li class="submenu">
-                    <a href="#">Blog <i class="fa-solid fa-caret-down"></i></a>
-                    <ul class="sub-menu">
-                        <li><a href="#">What is IOT</a></li>
-                        <li><a href="#">How is IOT</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
+                <li><a href="blog.html">Blog</a></li>
+                <li class="submenu submenu-trigger">
                     <a href="#">About<i class="fa-solid fa-caret-down"></i></a>
                     <ul class="sub-menu">
                         <li><a href="about-the-company.html">About the company</a></li>
@@ -43,38 +42,50 @@
             </ul>
         </nav>
         <div class="social-media">
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-whatsapp"></i>
+            <a href="help.html" class="customer-care"><i class="fa-solid fa-headset"></i> HELP</a>
+            <a href="product.html" class="customer-care"><i class="fa-solid fa-cart-shopping"></i> STORE</a>
+
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
 
+
     <main>
         <!-- HTML structure for About Page Starts here -->
-        <section class="about-section">
-            <div class="about-container">
+        <section class="about-section" >
+            <div class="about-container" >
                 <div class="about-wallpaper">
                     <div class="word-overlay">
-                        <p id="about-west">WESTEROS MULTIMEDIA SERVICES</p>
-                        <p>WESTEROS MULTIMEDIA SERVICES Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur perferendis dignissimos ducimus adipisci impedit aliquam maxime delectus, fugiat necessitatibus natus repellat vero animi minima distinctio officia in voluptas! Aspernatur vero recusandae non libero deleniti fugiat! Quidem hic qui quo nam.</p>
+                        <p id="about-west">WESTEROS MULTISERVICE COMPANY</p>
+                        <p class="story-content content-story">Westeros Multiservice Company was born out of the passion to provide solutions to different security needs in the society. Founded in year 2019, it has undergone different phases of refinement to become a leading voice in one of the emerging tech markets, the Extra Low Voltage (ELV) Systems. We strive to make various security challenges posing home owners, offices and industrial players a thing of the past, by providing adequate and well thought out solutions. These solutions are tailored in such a way that, though generic, it is also customer-centered. We want to help businesses and home owners maximize profit and reap economic value.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="story-container">
-                <p class="story">HOW WE STARTED</p>
-                <p class="story-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque minus eius nesciunt vel suscipit non, dignissimos ratione cum consequuntur quas nisi quos magni reiciendis fuga eum facere quibusdam doloremque laborum unde repudiandae. Atque voluptas quas, consectetur consequatur in modi, officiis quibusdam vero cum maxime sint similique praesentium voluptatum assumenda sit possimus quaerat aut corrupti illo? Aperiam praesentium, officia vitae ad nulla deserunt rem corporis aliquam expedita voluptates voluptate ex eligendi magnam illo tempora neque dicta consectetur obcaecati ipsa nemo perspiciatis eos vero! In quisquam sint ab, quaerat dolores vero repellendus aliquam, sequi molestias dicta nemo commodi ut itaque voluptas nesciunt!</p>
+
+            <div class="story-container" >
+                <p class="story">WHAT WE OFFER</p>
+                <p class="story-content">We help homes and businesses better control and protect their properties by providing solutions that cut across several Original Equipment Manufacturers (OEM's) who provide integrated services with Internet of Things (IoT) enabled devices. We help facilitate the consulting, design, implementation or installation aspects, with client’s budget in view.</p>
+                <p class="story-content">We also offer you value for money by providing you a one stop online market place to purchase top category OEM devices for home and business automation. We pick variety of devices from top tier manufactures like Schneider, ABB, Siemens, KNX etc., at very unbeatable prices. We provide options to request for electronic proforma invoices or quote, home/office delivery with due dates.</p>
             </div>
         </section>
 
 
         <section class="west-sec">
-            <div class="about-expertise-container">
+            <div class="about-expertise-container" >
                 <div class="about-expertise">
-                    <div class="story-container about-overlay">
-                        <p class="story">OUR EXPERTISE</p>
-                        <p class="story-content expertise-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, minima! Placeat fugit laborum ipsum quod iste corporis. Magni cum quis, pariatur possimus asperiores facere eos assumenda aspernatur magnam molestiae obcaecati ullam reiciendis itaque odio illo earum! Officiis harum impedit aspernatur. Eum sit doloremque quam sequi, voluptate nostrum quidem assumenda, et consectetur iste ad dolores laborum fugit reprehenderit quisquam. Officia, iure deleniti maxime dolore cupiditate officiis minus? Reprehenderit illum hic quidem. Saepe maxime numquam assumenda dignissimos nesciunt cumque cupiditate rem consequuntur enim non. Ducimus eaque reprehenderit voluptatem, nisi, perferendis voluptates hic eveniet soluta eum vero ipsa? Cumque autem quidem ipsa minus.</p>
+                    <div class="story-container about-overlay expertise-content">
+                        <p class="story " style="font-weight: 500; text-align: center;">WESTESERVE - A SUBSIDIARY OF WESTEROS MULTISERVICE COMPANY</p>
+                        <p class="story-content ">Westeserve is a technology infrastructure provider. We enable homes and businesses connect devices that enhance security, way of life and functionality. At the heart of the Westeserve is automation, we automate homes for seamless life style and we are keen on encouraging well thought out solutions that are locally feasible and globally adaptable.
+                            Our services range from providing an online market place for affordable home security and automation devices, providing guide lines on how to install or improve upon existing home automation systems, provision of after sales service and maintenance of home security and automation devices. 
+                        </p>
+                        <p class="story-content ">The online presence of Westeserve is where customers can find out more about the company. The interactive platform which is created to enable users place orders, choose means of delivery, pay for items and have them shipped to their destination. Our market page includes detailed list of smart sensory devices, which ranges from Visual (smart cameras), Sound, Proximity, Temperature, Pressure, and Level Detectors. What we offer is a low-cost way of shopping for materials that can be used during system integration of home and industrial appliances.
+                            We want to help our prospective clients make informed decisions for their security and automation needs and also provide Installation, Commissioning and Maintenance services for products bought from our platform at unbeatable prices.
+                        </p>
+                
                     </div>
                 </div>
                 <div class="about-expertise-image">
@@ -82,6 +93,13 @@
                 </div>
             </div>
         </section>
+
+        <div class="story-container">
+            <p class="story">OUR EXPERTISE</p>
+            <p class="story-content"><b>Home Automation/IoT Implementation:</b> We have tailor made solutions to provide you the peace of mind you desire. For instance, while you are away, with the possibility to control every aspect of your home from your handheld devices. We make use of Schneider’s Wiser topology and other solutions such as KNX and Firefly.</p>
+            <p class="story-content"><b>Smart Homes:</b> In our smart home offer, we work closely with real estate developers to introduce smart home components while the project is ongoing.</p>
+            <p class="story-content"><b>Facility management:</b> We offer you top of the range maintenance service to increase efficiency, prolong service life of your Power generators and HVAC with state of art tools.</p>
+        </div>
                     
 
     </main>
@@ -92,7 +110,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-menu">
-                    <p id="footer-first-para">Westeros</p>
+                    <p id="footer-first-para">Westeserve</p>
                     <p id="footer-second-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt iste beatae minima ab necessitatibus debitis veritatis ex officia dolorem.</p>
                 </div>
                 <div class="footer-menu-link">
@@ -104,11 +122,12 @@
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
+                <address class="footer-contact">
                     <ul class="footer-inner-contact">
-                        <li class="footer footer-about-list-item"><a href="#">CONTACT US</a></li>
-                        <li><a href="#">Tel: +234 7069943563</a></li>
-                        <li class="footer"><a href="#">Email: maiassociates@rocketmail.com</a></li>
+                        <li class="footer footer-about-list-item"><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="tel: 2347069943563">Tel: +234 7069943563</a></li>
+                        <li class="footer"><a href="mailto:neche.bless@mail.com">Email: neche.bless@mail.com</a></li>
+                        <li class="footer"><a href=""><i class="fa-solid fa-location-dot"></i> Locate Us</a></li>
                     </ul>   
                         
                     <ul class="social-media-handle">
@@ -117,13 +136,17 @@
                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
-                </div>
+                </address>
             </div>
             <div class="footer-copyright">
-                <p id="footer-copyright-para">Copyright 2023 Westeros Multimedia Services. All rights reserved.</p>
+                <p id="footer-copyright-para">Copyright 2023 Westeserve, a subsidiary of Westeros Multiservice Company. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script src="script.js"></script>
 </body>

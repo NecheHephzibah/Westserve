@@ -5,35 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Westeros</title>
     <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="index-media-query.css">
+    <link rel="stylesheet" href="tablet-media-query.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://kit.fontawesome.com/e469359435.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- first section for the home page -->
-    <header class="menu">
+    <header class="menu mobile-menu">
         <!-- LOGO -->
-        <div class="logo">Westeros</div>
+        <div class="logo"><a href="index.html">WESTESERVE</a></div>
         <!-- NAVIGATION BAR -->
         <nav class="menu-container">
             <ul class="menu-list">
                 <li><a href="index.html">Home</a></li>
-                <li class="submenu">
+                <li class="submenu mobile-submenu-container">
                     <a href="#">Services <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="sub-menu">
                         <li><a href="consult.html">Consult</a></li>
-                        <li><a href="case-study.html">Case Studies</a></li>                        
+                        <li><a href="case-study.html">Case Studies</a></li>
                         <li><a href="product.html">Products</a></li>                        
 
                     </ul>
                 </li>
-                <li class="submenu">
-                    <a href="#">Blog <i class="fa-solid fa-caret-down"></i></a>
-                    <ul class="sub-menu">
-                        <li><a href="#">What is IOT</a></li>
-                        <li><a href="#">How is IOT</a></li>
-                    </ul>
-                </li>
-                <li class="submenu">
+                <li><a href="blog.html">Blog</a></li>
+                <li class="submenu submenu-trigger">
                     <a href="#">About<i class="fa-solid fa-caret-down"></i></a>
                     <ul class="sub-menu">
                         <li><a href="about-the-company.html">About the company</a></li>
@@ -43,17 +39,29 @@
             </ul>
         </nav>
         <div class="social-media">
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-whatsapp"></i>
+            <a href="help.html" class="customer-care"><i class="fa-solid fa-headset"></i> HELP</a>
+            <a href="product.html" class="customer-care"><i class="fa-solid fa-cart-shopping"></i> STORE</a>
+
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
+
 <!-- HTML Structure for Product page starts here -->
     <main>
+
+        <div>
+            <h2 id="product-heading" style="font-weight: 500;">Westeserve Online Store</h2>
+            <p></p>
+        </div>
+
         <div class="product-container">
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9A26924.PNG" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -62,7 +70,9 @@
             </div>
 
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9C15183.PNG" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -71,7 +81,9 @@
             </div>
 
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9C15185.JPG" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -80,7 +92,9 @@
             </div>
 
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9C15186.PNG" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -89,7 +103,9 @@
             </div>
 
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9C20132.PNG" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -98,7 +114,9 @@
             </div>
 
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9C20134.JPG" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -107,7 +125,9 @@
             </div>
 
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9C20137.PNG" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -116,7 +136,9 @@
             </div>
 
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9C20162.PNG" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -125,7 +147,141 @@
             </div>
 
             <div class="product-inner-container">
-                <div class="product-image"></div>
+                <div class="product-image">
+                    <img src="./images/Products/A9C20164.PNG" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9C20167.PNG" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9C20232" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9C20436.jpg" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9C20442.PNG" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9C20663.PNG" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9C22740.PNG" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9C22763.PNG" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9F84110.JPG" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9R10216.png" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9R10225.PNG" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9R11291.jpg" class="product-image" alt="">
+                </div>
+                <div class="product-priceTag">
+                    <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
+                    <p id="product-price">$0.00</p>
+                    <a href="#" class="product-payment">MAKE PAYMENT</a>
+                </div>
+            </div>
+
+            <div class="product-inner-container">
+                <div class="product-image">
+                    <img src="./images/Products/A9R14480.jpg" class="product-image" alt="">
+                </div>
                 <div class="product-priceTag">
                     <p id="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cupiditate!</p>
                     <p id="product-price">$0.00</p>
@@ -147,7 +303,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-menu">
-                    <p id="footer-first-para">Westeros</p>
+                    <p id="footer-first-para">Westeserve</p>
                     <p id="footer-second-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt iste beatae minima ab necessitatibus debitis veritatis ex officia dolorem.</p>
                 </div>
                 <div class="footer-menu-link">
@@ -159,11 +315,12 @@
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
+                <address class="footer-contact">
                     <ul class="footer-inner-contact">
-                        <li class="footer footer-about-list-item"><a href="#">CONTACT US</a></li>
-                        <li><a href="#">Tel: +234 7069943563</a></li>
-                        <li class="footer"><a href="#">Email: maiassociates@rocketmail.com</a></li>
+                        <li class="footer footer-about-list-item"><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="tel: 2347069943563">Tel: +234 7069943563</a></li>
+                        <li class="footer"><a href="mailto:neche.bless@mail.com">Email: neche.bless@mail.com</a></li>
+                        <li class="footer"><a href=""><i class="fa-solid fa-location-dot"></i> Locate Us</a></li>
                     </ul>   
                         
                     <ul class="social-media-handle">
@@ -172,10 +329,10 @@
                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
-                </div>
+                </address>
             </div>
             <div class="footer-copyright">
-                <p id="footer-copyright-para">Copyright 2023 Westeros Multimedia Services. All rights reserved.</p>
+                <p id="footer-copyright-para">Copyright 2023 Westeserve, a subsidiary of Westeros Multiservice Company. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -11,108 +11,6 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
-/* Nav bar Styling */
-
-.menu{
-    top: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    padding: 35px 15px 30px 15px;
-    color: black;
-    background-color: white;
-}
-
-
-.menu-container{
-    width: 50%;
-    font-size: 12px;
-    font-family: 'Noto Sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 10px 15px 0 15px;
-}
-
-.menu-list{
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-}
-
-.menu-list li{
-    list-style: none;
-}
-
-.menu-list li a{
-    text-decoration: none;
-    display: block;
-    /* padding-bottom: 8px; */
-    color: black;
-}
-
-.menu-list li a:hover{
-    color: #207388;
-}
-
-/* Style the nav sub-menus */
-.sub-menu{
-    display: none;
-    position: relative;
-    font-size: 12px;
-    line-height: 23px;
-    max-height: 10px;
-    /* padding: 0 px 0 5px; */
-    border-bottom-left-radius: 10px;
-    transition: all 0.3s ease, all 0.3s ease;
-}
-
-.submenu > a > i {
-    position: absolute;
-    margin-left: 2px;
-    color: #011d24;
-}
-
-
-.submenu:hover .sub-menu{
-    display: block;
-}
-
-.sub-menu li{
-    display: block;
-}
-
-.sub-menu li a{
-    color: #207388;
-}
-
-.sub-menu li:hover{
-    /* background-color: black; */
-    padding: 2px 2px 0 2px;
-    /* border-bottom-right-radius: 10px; */
-    font-size: 12px;
-    border: 1px solid #207388;
-}
-
-.sub-menu li:hover a:hover{
-    color: #207388;
-}
-
-.social-media {
-    width: 30%;
-    padding: 0 10px 0 70px;
-    color: #207388;
-}
-
-.fa-brands {
-    padding: 0 10px;
-}
-
-.fa-brands:hover{
-    color: rgb(209, 192, 36);
-}
-
-
 
 /* Style the logo */
 .logo{
@@ -121,92 +19,341 @@ body{
     font-weight: 800;
     padding-right: 25px;
     font-family: sans-serif;
-    color: #011d24;
-    text-transform: uppercase;
 }
+
+.logo a{
+    text-decoration: none;
+    color: #011d24;
+}
+
+/* Nav bar Styling */
+
+.menu{
+    top: 0;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    padding: 35px 15px 40px 15px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(15, 15, 13, 0.4);
+}
+
+
+.menu-container{
+    width: 40%;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 15px 0 0 35px;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+
+.menu-list li{
+    margin-right: 20px;
+}
+
+.menu-list li:last-child{
+    margin-right: 0;
+}
+
+.menu-list li a{
+    text-decoration: none;
+    display: block;
+    color: #011d24;
+}
+
+.menu-list li a:hover{
+    color: #207388;
+}
+
+
+/* .menu-toggle{
+    display: none;
+} */
+
+
+
+/* Style the nav sub-menus */
+.sub-menu{
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 30px rgba(15, 15, 13, 0.4);
+    font-size: 13px;
+    line-height: 30px;
+    padding: 10px 15px;
+    transition: all 0.3s ease, all 0.3s ease;
+    z-index: 1;
+}
+
+.submenu > a > i {
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 2px;
+    font-size: 14px;
+    color: #1f2222;
+}
+
+
+.submenu:hover .sub-menu{
+    display: block;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(15, 15, 13, 0.1);
+}
+
+
+.sub-menu li{
+    display: block;
+    margin: 10px 0;
+    
+}
+
+.sub-menu li a{
+    color: #011d24;
+   
+}
+
+/* .sub-menu li:hover{
+    font-size: 12px;
+    
+} */
+
+.sub-menu li:hover a:hover{
+    text-decoration: underline;
+    text-decoration-color: #011d24;
+}
+
+
+.social-media {
+    
+    width: 40%;
+    text-align: right;
+    padding: 15px 0px 0 0px;
+    color: #011d24;
+}
+
+.customer-care{
+    padding-left: 50px;
+    text-decoration: none;
+    color: #011d24;
+    font-size: 14px;
+
+}
+
+.customer-care > i{
+    padding-right: 10px;
+}
+
+.customer-care:hover{
+    color: #207388;;
+}
+
+
+
+/* ======STYLES FOR MOBILE MENU CONTAINER =======*/
+
+/* Initial styles for the mobile menu container */
+.menu-toggle{
+    display: none;
+}
+
+
 
 /* Style background Image */
 
 .wall-container{
     width: 100%;
     display: flex;
-    flex-direction: row;
     position: relative;
-    margin-top: 25px;
+    margin-top: 120px;
 }
 
+/* .wallpaper-image{
+    width: 60%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+} */
+
+
+ 
 .wallpaper-side{
     width: 40%;
-    height: 100vh;
+    height: 500px;
     background-color: #011d24;
-}
+}  
 
 .overlay{
-    position: absolute;
+    position: relative;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+#quote-tag{
     color: white;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
-    /* font-size: 45px; */
-    padding: 160px 90px 0px 160px;
+    padding-top: 130px;
 }
+
 
 .wall-text{
     position: relative;
-    padding: 1px 0px 0px px;
-    font-size: 45px;
+    line-height: 50px;
+    padding: 30px 40px 0 40px ;
+    color: whitesmoke;
 }
 
-#last-words{
-    position: relative;
-    bottom: 0;
-    color: white;
-    padding: 550px 90px 0 135px;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 13px;
-}
 
-.Westeros-logo{
-    position: relative;
-    color: white;
-    font-size: 10px;
-    padding: 1px 70px 90px 65px;
-}
+/* =========== Background Carousel =============== */
 
-.wallpaper-image{
+.sectioning{
     width: 60%;
-    height: 100vh;
-    background-image: url(./images/person-using-smartphone-his-automated-home.jpg);
-    background-size: cover;
-    background-position: center;
+    height: 100vh; 
+    display: flex;
+    /* align-items: center;
+    justify-self: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0; */
+    /* background-color: #011d24; */
+    
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    /* border-radius: 10px;*/
+    overflow: hidden;
+}
+
+.slide{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide input{
+    display: none;
+}
+
+.st{
+    width: 20%;
+    transition: 2s;
+  
+}
+
+.st img{
+    width: 800px;
+    height: 500px;
+    
+}
+
+.nav-m{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+} 
+
+.m-btn{
+    border: 2px solid #11b3db;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+
+.m-btn:hover{
+    background-color: #11b3db;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto div{
+    border: 2px solid #11b3db;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: #11b3db;
+}
+
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: #11b3db;
+}
+
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: #11b3db;
+}
+
+#radio4:checked ~ .nav-auto .a-b4{
+    background-color: #11b3db;
 }
 
 
 
-/* .wallpaper{
+
+
+
+ .wallpaper{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/room-4323127_1920.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
     height: 100vh;
-} */
+} 
 
 
 
-/* .wallpaper::before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.6;
-    z-index: -1;
-} */
 
 /* text overlay style */
-/* .text-overlay{
+ /* .text-overlay{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -214,32 +361,82 @@ body{
     text-align: center;
     color: white;
     z-index: 1;
-} */
+} 
 
-/* .text-overlay p{
+ .text-overlay p{
     font-size: 36px;
     margin-bottom: 10px;
-} */
+}  */
+
+
+
+/* ========== INDEX PAGE ABOUT=============== */
+.index-about{
+    width: 100%;
+}
+
+
+.index-about-img img{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    padding: 0 50px 90px;
+}
+
+.index-about1{
+    position: absolute;
+    margin-top: -565px;
+    margin-left: 50px;
+    padding: 0 14px;
+    background-color: #BAADA4;
+    color: white;
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+}
+
+.b{
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#Index-text0{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+#index-text01{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #4A4A4A;
+    padding-bottom: 80px;
+}
+
+
 
 /* STYLING HOME CONTENTS: BLOG SNIPPETS AND IMAGES (HTML)*/
 h3{
-    color: #011d24;
+    color: #4A4A4A;
+    position: relative;
 }
 
 #blog-heading{
-    color: #011d24;
+    color: #4A4A4A;
 }
 
 .blog-rule-line{
-    margin-top: 100px;
+    margin-top: 1px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #207388;
+    font-family: sans-serif;
+    color: #4A4A4A;
 }
 
 .blog-container {
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     padding: 70px 0px 30px 160px ;
 }
 
@@ -258,7 +455,6 @@ h3{
 .blog-write-up {
     width: 50%;
     font-family: 'Montserrat', sans-serif;
-    /* background-color: rgb(201, 198, 198); */
     margin-bottom: 20px;
     padding: 50px 7px;
     border-radius: 15px;
@@ -266,21 +462,17 @@ h3{
 
 .blog-image {
     width: 35%;
-    /* background-color: rgb(201, 198, 198); */
     margin-bottom: 20px;
     border-radius: 6px;
+    background-position: center;
+    background-size: cover;
 }
 
 .blog-text {
     line-height: 35px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-}
-
-.blog-image {
-    /* padding-right: 30px; */
-    background-position: center;
-    background-size: cover;
+    color: #4A4A4A;;
 }
 
 .anchor-read {
@@ -301,7 +493,7 @@ h3{
     background-position: center;
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     color: rgb(255, 255, 255);
     font-family: 'Noto Sans', sans-serif;
 }
@@ -313,7 +505,7 @@ h3{
     top: 0;
     left: 0;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     background-color: rgb(7, 5, 22);
     opacity: 0.6;
     z-index: -1;
@@ -373,6 +565,7 @@ h3{
     width: 33.3%;
     padding: 125px 10px 20px 50px;
     line-height: 45px;
+    font-style: normal;
 }
 
 .footer-contact ul {
@@ -412,6 +605,7 @@ h3{
 
 #footer-copyright-para{
     font-size: 11px;
+    text-transform: capitalize;
 }
 
 
@@ -422,14 +616,14 @@ h3{
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: 25px;
-    padding-bottom: 80px;
+    margin-top: 120px;
+    padding-bottom: 0px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .about-wallpaper {
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./images/pexels-mark-2724749.jpg);
     background-position: center;
     background-size: cover;
@@ -468,8 +662,8 @@ h3{
 /* ================ ABOUT STORY CONTENT=================== */
 
 .story-container {
-    height: 70vh;
-    padding: 20px 170px 100px 170px;
+    height: 100vh;
+    padding: 80px 170px 520px 170px;
     line-height: 50px;
     justify-content: center;
     
@@ -495,7 +689,8 @@ h3{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/Smart-Home-Automation.png);
     background-size: cover;
     background-position: center;
-    margin-bottom: 80px;
+    padding-bottom: 400px;
+    /* margin-bottom: 80px; */ 
 }
 
 
@@ -505,9 +700,8 @@ h3{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
-    margin-top: 100px;
-    /* margin-bottom: 100px; */
+    height: 100%;
+    margin-top: 120px;
     background-color: #011d24;
 
 }
@@ -610,8 +804,17 @@ h3{
 
   /* ===================  PRODUCT PAGE STYLING ======================== */
 
+  #product-heading{
+    text-align: center;
+    color: #011d24;
+    margin-top: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+  }
+
   .product-container{
-    margin: 150px 100px 100px 150px;
+    margin: 50px 20px 0px 98px;
     /* border: 1px solid red; */
     display: inline-flex;
     flex-direction: row;
@@ -627,12 +830,11 @@ h3{
   }
 
   .product-image{
-    background-image: url(./images/Savant_CoreLightedMirror_SVTCM00030N03P00.jpg);
     background-position: center;
     background-size: cover;
     width: 170px;
     height: 180px;
-    margin: 30px 73px 15px 73px;
+    margin: 25px 0px 15px 37px;
 
   }
 
@@ -659,17 +861,17 @@ h3{
 
   /* =================================== CASE STUDY PAGE STYLING  ================================= */
   .case-container{
-    margin: 80px 20px 100px 20px;
+    margin: 180px 10px 100px 65px;
   }
 
-  .horizontal-line{
+  /* .horizontal-line{
     color: #ddd;
     margin-top: 109px;
-  }
+  } */
 
   #case-heading{
     padding: 0 0 50px 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     text-align: center;
   }
@@ -679,8 +881,9 @@ h3{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 391px;
-    height: 435px;
+    column-gap: 20px;
+    width: 340px;
+    height: 300px;
     background-color: #f2f2f2;
     margin: 10px 40px 40px 0px;
   }
@@ -688,4 +891,130 @@ h3{
   .case-image{
     background-position: center;
     background-size: cover;
+    width: 340px;
+    height: 300px;
+    /* margin: 25px 0px 15px 37px; */
   }
+
+  #case-title{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+  }
+
+  /* ====================== HELP PAGE starts here ======== */
+
+  .help-wallpaper {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./images/wonder0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.help-section{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.help-content{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.help-desk{
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 0px 100px;
+}
+
+.help-desk-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.troubleshooting{
+    padding: 70px 70px;
+}
+
+.troubleshooting-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.troubleshooting-text{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.troubleshooting-content1, .troubleshooting-content2, .troubleshooting-help-heading{
+    font-size: 20px;
+    line-height: 2;
+}
+
+.help-desk-content{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+}
+
+
+
+/* ====== HELP Manual Page Styling ====== */
+
+.manual-container {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 100px 40px 100px 270px;
+    background-color: #011d24;
+}
+
+.manual-user-guide, .manual-user-guide-text{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.manual-user-guide-text{
+    padding-bottom: 30px;
+}
+
+.inner-manual{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: center; 
+}
+
+.manual-pdf{
+    padding: 30px 40px 45px;
+    background-color: #f2f2f2;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.manual-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    padding-bottom: 45px;
+}
+
+.manual-anchor{
+    text-decoration: none;
+    color: #011d24;
+    border: 1px solid #207388;
+    padding: 10px;
+    text-align: center;
+}
+
+.manual-image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 70px;
+}
+  

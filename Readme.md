@@ -1,1 +1,1 @@
-This is a site that renders Home Automation and security services to people.
+This is a site that renders Home Automation and security services to people. They help homes and businesses better control and protect their properties by providing solutions that cut across several Original Equipment Manufacturers (OEM's) who provide integrated services with Internet of Things (IoT) enabled devices. They help facilitate the consulting, design, implementation or installation aspects, with client’s budget in view.
