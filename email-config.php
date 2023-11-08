@@ -17,7 +17,7 @@
 // Set SMTP authentication
 // $mail->SMTPAuth = true;
 // $mail->Username = 'neche.bless@gmail.com';
-// $mail->Password = 'cr1y1ngb@b1';
+// $mail->Password = '';
 
 // Enable SMTP encryption (TLS or SSL)
 // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use ENCRYPTION_SMTPS for SSL
