@@ -14,10 +14,11 @@ body{
 
 /* Style the logo */
 .logo{
+    display: flex;
+    flex-direction: row;
     width: 20%;
     font-size: 30px;
     font-weight: 800;
-    padding-right: 25px;
     font-family: sans-serif;
 }
 
@@ -47,7 +48,7 @@ body{
     font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    padding: 15px 0 0 35px;
+    padding: 15px 0 0 100px;
 }
 
 .menu-list{
