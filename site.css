@@ -110,6 +110,7 @@ body{
     display: block;
     background-color: whitesmoke;
     box-shadow: 0 0 10px rgba(15, 15, 13, 0.1);
+
 }
 
 
@@ -121,7 +122,7 @@ body{
 
 .sub-menu li a{
     color: #011d24;
-   
+    
 }
 
 /* .sub-menu li:hover{
