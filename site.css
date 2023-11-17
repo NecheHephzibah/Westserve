@@ -191,7 +191,7 @@ body{
  
 .wallpaper-side{
     width: 40%;
-    height: 500px;
+    height: 580px;
     background-color: #011d24;
 }  
 
@@ -206,7 +206,7 @@ body{
 #quote-tag{
     color: white;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 150px;
 }
 
 
@@ -235,14 +235,14 @@ body{
 
 .slider{
     width: 800px;
-    height: 500px;
+    height: 580px;
     /* border-radius: 10px;*/
     overflow: hidden;
 }
 
 .slide{
     width: 500%;
-    height: 500px;
+    height: 580px;
     display: flex;
 }
 
@@ -258,21 +258,21 @@ body{
 
 .st img{
     width: 800px;
-    height: 500px;
+    height: 580px;
     
 }
 
 .nav-m{
     position: absolute;
-    width: 800px;
+    width: 450px;
     margin-top: -40px;
     justify-content: center;
     display: flex;
 } 
 
 .m-btn{
-    border: 2px solid #11b3db;
-    padding: 5px;
+    border: 1px solid #207388;
+    padding: 3px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
@@ -283,7 +283,7 @@ body{
 }
 
 .m-btn:hover{
-    background-color: #11b3db;
+    background-color: #207388;
 }
 
 #radio1:checked ~ .first{
@@ -304,15 +304,15 @@ body{
 
 .nav-auto{
     position: absolute;
-    width: 800px;
-    margin-top: 460px;
+    width: 450px;
+    margin-top: 540px;
     display: flex;
     justify-content: center;
 }
 
 .nav-auto div{
-    border: 2px solid #11b3db;
-    padding: 5px;
+    border: 1px solid #207388;
+    padding: 3px;
     border-radius: 10px;
     transition: 1s;
 }
@@ -323,19 +323,19 @@ body{
 }
 
 #radio1:checked ~ .nav-auto .a-b1{
-    background-color: #11b3db;
+    background-color: #207388;
 }
 
 #radio2:checked ~ .nav-auto .a-b2{
-    background-color: #11b3db;
+    background-color: #207388;
 }
 
 #radio3:checked ~ .nav-auto .a-b3{
-    background-color: #11b3db;
+    background-color: #207388;
 }
 
 #radio4:checked ~ .nav-auto .a-b4{
-    background-color: #11b3db;
+    background-color: #207388;
 }
 
 
@@ -387,7 +387,7 @@ body{
 
 .index-about1{
     position: absolute;
-    margin-top: -567px;
+    margin-top: -627px;
     margin-left: 50px;
     padding: 12px 14px;
     background-color: #011d24;
@@ -470,7 +470,7 @@ body{
 
 #index-partnership{
     text-align: center;
-    padding: 40px 200px 0px 200px;
+    padding: 0px 200px 0px 200px;
     line-height: 2;
     font-family: 'Montserrat', sans-serif;
 
@@ -488,7 +488,7 @@ h3{
 }
 
 .blog-rule-line{
-    margin-bottom: 90px;
+    margin-bottom: 60px;
     text-align: center;
     font-family: sans-serif;
     color: #4A4A4A;
@@ -631,7 +631,7 @@ h3{
 }
 
 .product-item .btn:hover {
-    background-color: #e54c2a;
+    background-color: #207388;
 }
 
 
@@ -960,14 +960,26 @@ h3{
     color: #011d24;
     margin-top: 200px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
     font-size: 35px;
   }
 
+  #product-sub-heading{
+    text-align: center;
+    color: #011d24;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .product-smart-device-heading{
+    font-size: 24px;
+    padding: 10px 0px 0px 135px;
+    text-decoration: underline;
+    color: #011d24;
+  }
+
   .product-container{
-    margin: 50px 20px 0px 98px;
-    /* border: 1px solid red; */
-    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     
