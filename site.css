@@ -375,26 +375,34 @@ body{
 /* ========== INDEX PAGE ABOUT=============== */
 .index-about{
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px;
 }
 
 
 .index-about-img img{
-    width: 100%;
-    height: 90vh;
+    width: calc(100% - 10%);
+    height: 80vh;
     position: relative;
-    padding: 0 50px 90px;
+    padding: 0;
+    margin: 0 auto 100px;
+    display: block;
 }
 
 .index-about1{
     position: absolute;
-    margin-top: -627px;
-    margin-left: 50px;
+    top: 10%;
+    left: 5%;
+    margin-top: -56px;
     padding: 12px 14px;
     background-color: #011d24;
     color: white;
-    width: 40%;
+    width: calc(40% - 40px);
     font-family: 'Montserrat', sans-serif;
     line-height: 24px;
+    box-sizing: border-box;
 }
 
 .b{
@@ -440,7 +448,7 @@ body{
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    padding: 40px 50px 100px 50px;
+    padding: 30px 65px 100px 65px;
 }
 
 .index-inner-manual{
@@ -507,9 +515,11 @@ h3{
 .blogit {
     display: flex;
     flex-direction: row;
-    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
     position: relative;
-  
+    padding-bottom: 70px;
 }
 
 .blogit-b {
@@ -517,17 +527,12 @@ h3{
 }
 
 .blog-write-up {
-    width: 50%;
+    width: 40%;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 20px;
-    padding: 50px 7px;
-    /* border-radius: 15px; */
-   
 }
 
 .blog-image {
-    width: 50%;
-    margin-bottom: 20px;
+    width: 40%;
     border-radius: 4px;
     background-position: center;
     background-size: cover;
@@ -542,12 +547,12 @@ h3{
 
 .anchor-read {
     text-decoration: underline;
-    color: rgb(9, 98, 133);
+    color: #207388;
     font-size: 14px;
 }
 
 .anchor-read:hover {
-    color: rgb(146, 14, 87);
+    color: #011d24;
 }
 
 
@@ -560,7 +565,7 @@ h3{
 }
 
 .anchor-why:hover{
-    color: #11b3db;
+    color: #011d24;
 }
 
 
@@ -679,7 +684,7 @@ h3{
     font-size: 30px;
     color: #207388;
     text-transform: uppercase;
-    padding: 125px 0px 20px 40px;
+    padding: 125px 0px 0px 40px;
 }
 
 #footer-second-para {
@@ -774,7 +779,7 @@ h3{
 
 .about-wallpaper {
     width: 100%;
-    height: 125vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./images/pexels-mark-2724749.jpg);
     background-position: center;
     background-size: cover;
@@ -1125,7 +1130,7 @@ h3{
     display: inline-block;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .manual-anchor:hover{
@@ -1133,18 +1138,23 @@ h3{
     color: white;
 }
 
-
-
-
-
-
-
-  .help-wallpaper {
+.help-wallpaper {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./images/wonder0.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(./images/pexels-mart-7709148.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.help-text-over{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    line-height: 50px;
 }
 
 .help-section{
@@ -1155,6 +1165,7 @@ h3{
 .help-content{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .help-desk{
@@ -1170,6 +1181,38 @@ h3{
     align-items: center;
     justify-content: center;
 }
+
+.faq-secondary-link {
+    color: #11b3db;
+    text-decoration: none;
+    border-bottom: 1px dashed #007bff;
+    transition: color 0.3s ease;
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+
+.faq-secondary-link:hover {
+    color: #011d24;
+}
+
+.manual-sec-link{
+    margin-bottom: 50px;
+}
+
+.manual-secondary-link{
+    color: #11b3db;
+    text-decoration: none;
+    border-bottom: 1px dashed #007bff;
+    transition: color 0.3s ease;
+    margin: 0 30px 0px 20px;
+}
+
+.manual-secondary-link:hover {
+    color: #011d24;
+}
+
+
+
 
 .troubleshooting{
     padding: 70px 70px;
