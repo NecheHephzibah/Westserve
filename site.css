@@ -415,12 +415,13 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     text-align: center;
-    color: #4A4A4A;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
 
 #index-text01{
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     color: #4A4A4A;
     padding-bottom: 80px;
@@ -451,9 +452,6 @@ body{
     padding: 30px 65px 100px 65px;
 }
 
-.index-inner-manual{
-    margin: 0px 0px;
-}
 
 .index-manual-pdf{
     padding: 30px;
@@ -496,10 +494,15 @@ h3{
 }
 
 .blog-rule-line{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: sans-serif;
     color: #4A4A4A;
+}
+
+.blog-rule-c{
+    margin-bottom: 20px; 
+    margin-top: 70px;
 }
 
 .blog-container {
@@ -519,7 +522,7 @@ h3{
     justify-content: center;
     column-gap: 15px;
     position: relative;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
 }
 
 .blogit-b {
@@ -557,6 +560,9 @@ h3{
 
 
 /* index anchor section before index product */
+.instal-offer{
+    margin-left: 68px;
+}
 
 .anchor-why{
     text-decoration: none;
@@ -620,7 +626,7 @@ h3{
 
 .product-item .price {
     font-size: 18px;
-    color: #ff5733;
+    color: #207388;
     font-weight: bold;
 }
 
@@ -632,7 +638,7 @@ h3{
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .product-item .btn:hover {
@@ -930,7 +936,7 @@ h3{
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    width: 30%;
+    width: 40%;
   }
   
   button[type="submit"]:hover {
